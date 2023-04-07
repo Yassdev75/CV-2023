@@ -1,5 +1,5 @@
 /* color palette from <https://github.com/vuejs/theme> */
-:root {
+/* :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
@@ -19,10 +19,10 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
-}
+} */
 
 /* semantic color variables for this project */
-:root {
+/* :root {
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
@@ -71,4 +71,31 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+} */
+
+@font-face {
+  font-family: "NeueMontrealRegular";
+  src: url(../assets/fonts/NeueMontreal/NeueMontreal-Regular.otf);
 }
+
+* {
+  font-family: "NeueMontrealRegular";
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: rgb(175, 175, 175);
+  overflow: hidden;
+  transition: color 0.3s ease 0s;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+}
+
