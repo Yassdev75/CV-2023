@@ -1,14 +1,17 @@
 <template>
   <div class="container-fluid">
     <header>
-      <Header/>
+      <Header />
     </header>
     <main class="container d-flex flex-wrap">
-      <Main/>
+      <Main />
     </main>
     <footer>
-      <Footer/>
+      <Footer />
     </footer>
+    <a class="nav-link switch-theme" href="#">
+      <img src="./assets/Images/moon_stars_fill.svg" alt="">
+    </a>
   </div>
 </template>
 
@@ -22,6 +25,7 @@ import Footer from './components/Footer.vue'
 .container-fluid {
   padding: 0px;
   min-height: 100vh;
+  position: relative;
 }
 
 body {
@@ -35,13 +39,17 @@ header {
 }
 
 main {
-  /* flex: 1; */
   min-height: 100vh;
-  /* height: calc(100vh - 60px - 60px); */
+  /* position: relative; */
 }
 
 footer {
   height: 60px;
 }
 
+.switch-theme {
+  position: absolute;
+  top: 95vh;
+  right: 25px;
+}
 </style>

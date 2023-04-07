@@ -1,13 +1,18 @@
 <template>
   <!-- PRESENTATION -->
-  <section class="section-part w-100 d-flex justify-content-center align-items-center text-uppercase">
+  <section class="section-home w-100 d-flex justify-content-center align-items-center text-uppercase">
     <div>
-      <h1>Hey, je suis Yassine Zambib</h1>
+      <h1 class="animate__animated animate__fadeInDown">Hey, je suis Yassine Zambib</h1>
       <div id="text-container">
         <span id="typed-text"></span><span id="blink">_</span>
       </div>
-      <p class="pt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi suscipit sequi quod nihil sapiente maiores, dolorum repellat eligendi asperiores nisi. Labore aut minima amet repellat animi assumenda dicta reiciendis recusandae.</p>
+      <p class="pt-3 text-muted animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Modi suscipit sequi quod nihil sapiente maiores, dolorum repellat eligendi asperiores nisi. Labore aut
+        minima amet repellat animi assumenda dicta reiciendis recusandae.</p>
     </div>
+    <a class="text-light arrow-container" href="#content">
+      <img class="arrow-down" src="../assets/Images/down_line.svg" alt="">
+    </a>
   </section>
   <!-- MES EXPERIENCES -->
   <section class="section-part">
@@ -37,9 +42,20 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <style scoped>
-.section-part {
+.section-part,
+.section-home {
   height: calc(100vh - 60px);
   margin: 0px !important;
+}
+
+.section-home {
+  position: relative;
+}
+
+.arrow-container {
+  position: absolute;
+  top: 80%;
+  left: 45%;
 }
 
 h1 {
@@ -59,5 +75,18 @@ h1 {
   50% {
     opacity: 0;
   }
+}
+
+/* CSS FLECHE SCROLL */
+
+@keyframes blink {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.arrow-down {
+  animation: blink 1.5s ease-in-out infinite;
+  height: 52px;
 }
 </style>
