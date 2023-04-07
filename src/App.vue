@@ -3,30 +3,14 @@
     <header>
       <Header/>
     </header>
-    <main class="container d-flex">
+    <main class="container d-flex flex-wrap">
       <Main/>
     </main>
-    <footer class="bg-dark text-center text-white">
+    <footer>
       <Footer/>
     </footer>
   </div>
 </template>
-
-<!-- <body> -->
-  <!-- Contenu de la page -->
-  <!-- <header> -->
-    <!-- Contenu de l'en-tête -->
-  <!-- </header>
-  <nav> -->
-    <!-- Contenu de la barre de navigation -->
-  <!-- </nav>
-  <main> -->
-    <!-- Contenu principal de la page -->
-  <!-- </main>
-  <footer> -->
-    <!-- Contenu du pied de page -->
-  <!-- </footer>
-</body> -->
 
 <script setup>
 import Header from './components/Header.vue'
@@ -35,7 +19,6 @@ import Footer from './components/Footer.vue'
 </script>
 
 <style scoped>
-
 .container-fluid {
   padding: 0px;
   min-height: 100vh;
@@ -48,16 +31,17 @@ body {
 }
 
 header {
-  height: 60px; /* exemple de hauteur */
+  height: 60px;
 }
 
 main {
-  flex: 1;
-  height: calc(100vh - 60px - 100px); /* 60px pour le header, 100px pour le footer */
+  /* flex: 1; */
+  min-height: 100vh;
+  /* height: calc(100vh - 60px - 60px); */
 }
 
 footer {
-  height: 100px; /* exemple de hauteur */
+  height: 60px;
 }
 
 </style>

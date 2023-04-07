@@ -85,8 +85,8 @@ body {
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: rgb(175, 175, 175);
-  overflow: hidden;
+  background: #F0F0F0;
+  overflow-x: hidden;
   transition: color 0.3s ease 0s;
   margin: 0px;
   padding: 0px;
