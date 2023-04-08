@@ -14,8 +14,22 @@
       <img class="arrow-down" src="../assets/Images/down_line.svg" alt="">
     </a>
   </section>
-  <!-- MES EXPERIENCES -->
-  <section class="section-part">
+  <!-- A PROPOS -->
+  <section class="section-about container w-100 d-flex align-items-center">
+    <div class="container-about d-flex">
+      <div>
+        <h2 class="numbered-heading mb-5">A propos de moi</h2>
+        <p>Je suis Yassine, web designer et developpeur web front-end, apres avoir obtenu un bts en negociation relation
+          client, je me suis dirigé vers un domaine qui me passionnait vraiment, le domaine du web. J'ai suivis un cursus de
+          developpeur web en 2 ans au conservatoire, j'en ai obtenu le diplome en fin 2021</p>
+      </div>
+      <div>
+        <div style="width: 300px; height: 300px; border: solid 1px black"></div>
+      </div>
+    </div>
+  </section>
+  <!-- PRESENTATION -->
+  <section>
   </section>
 </template>
 
@@ -42,11 +56,13 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <style scoped>
-.section-part,
+.section-about,
 .section-home {
   height: calc(100vh - 60px);
   margin: 0px !important;
 }
+
+/* CSS SECTION HOME */
 
 .section-home {
   position: relative;
@@ -88,5 +104,34 @@ h1 {
 .arrow-down {
   animation: blink 1.5s ease-in-out infinite;
   height: 52px;
+}
+
+/* CSS SECTION A PROPOS */
+.container-about {
+  margin: 0 130px 0 130px;
+  gap: 50px;
+}
+
+.numbered-heading::before {
+  position: relative;
+  bottom: 4px;
+  counter-increment: section 1;
+  content: "0" counter(section) ".";
+  margin-right: 10px;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
+  font-weight: 400;
+}
+
+.numbered-heading::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: -8px;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #000000;
 }
 </style>

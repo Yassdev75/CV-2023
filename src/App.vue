@@ -9,9 +9,9 @@
     <footer>
       <Footer />
     </footer>
-    <a class="nav-link switch-theme" href="#">
+    <!-- <a class="nav-link switch-theme" href="#">
       <img src="./assets/Images/moon_stars_fill.svg" alt="">
-    </a>
+    </a> -->
   </div>
 </template>
 
