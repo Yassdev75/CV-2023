@@ -11,6 +11,10 @@
   <section class="section-experience container w-100 d-flex align-items-center">
     <Experience />
   </section>
+  <!-- PROJECTS -->
+  <section class="section-projects container w-100 d-flex align-items-center bg-primary">
+    <Projects />
+  </section>
 </template>
 
 <script setup>
@@ -18,7 +22,7 @@
 import Home from './MainContent/Home.vue'
 import About from './MainContent/About.vue'
 import Experience from './MainContent/Experience.vue'
-
+import Projects from './MainContent/Projects.vue'
 
 </script>
 
@@ -30,5 +34,9 @@ import Experience from './MainContent/Experience.vue'
 
 .section-experience {
   height: 40vh;
+}
+
+.section-projects {
+  height: 100vh;
 }
 </style>

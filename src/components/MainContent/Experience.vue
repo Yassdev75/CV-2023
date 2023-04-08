@@ -63,15 +63,33 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 ul {
   list-style-type: none;
   padding: 0;
+  border-left: solid 3px #90b1ae;
 }
 
 li {
   cursor: pointer;
   padding: 10px 0;
+  text-align: center;
+  width: 120%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+ul > li:hover {
+  /* color: #d3f7f3; */
+  background-color: #778787;
+  transition: background-color 1.5s ease;
+}
+
+.active {
+  color: #d3f7f3;
+  background-color: #000000;
+  /* border-left: solid 4px #262d2c; */
+  transition: background-color 1s ease;
 }
 
 .content {
@@ -103,9 +121,4 @@ li {
   background-color: #000000;
 }
 
-.active {
-  color: #247d73;
-  background-color: #83C5BE;
-  border-left: solid 2px red;
-}
 </style>

@@ -40,7 +40,7 @@ export default {
 
 }
 </script>
-<style>
+<style scoped>
 /* CSS SECTION A PROPOS */
 .container-about {
   margin: 0 130px 0 130px !important;
@@ -66,7 +66,7 @@ export default {
 .block1 {
   width: 300px;
   height: 300px;
-  border: solid 2px rgb(168, 0, 42);
+  border: solid 2px #000000;
   position: absolute;
   border-radius: 5px;
 }

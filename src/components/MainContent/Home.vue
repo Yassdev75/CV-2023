@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <div>
     <div>
       <h1 class="animate__animated animate__fadeInDown">Hey, je suis Yassine Zambib</h1>
