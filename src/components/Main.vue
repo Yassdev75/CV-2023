@@ -12,7 +12,7 @@
     <Experience />
   </section>
   <!-- PROJECTS -->
-  <section class="section-projects container w-100 d-flex align-items-center bg-primary">
+  <section class="section-projects container w-100 d-flex">
     <Projects />
   </section>
 </template>
@@ -39,4 +39,17 @@ import Projects from './MainContent/Projects.vue'
 .section-projects {
   height: 100vh;
 }
+
+@media (max-width: 1400px) {
+    .section-experience {
+      min-height: 60vh;
+  }
+}
+
+@media (max-width: 757px) {
+    .section-experience {
+      min-height: 100vh;
+  }
+}
+
 </style>

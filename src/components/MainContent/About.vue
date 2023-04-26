@@ -90,4 +90,11 @@ export default {
   line-height: 2;
   font-size: 1rem;
 }
+
+@media (max-width: 991px) {
+  .container-about {
+    margin: 0 !important;
+  }
+}
+
 </style>

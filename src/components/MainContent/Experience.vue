@@ -7,7 +7,8 @@
         <div class="row">
           <div class="col-md-4 d-flex align-items-center">
             <ul>
-              <li v-for="(section, index) in sections" :key="index" :class="{active: section.isActive}" @click="updateCurrentSection(index)">
+              <li v-for="(section, index) in sections" :key="index" :class="{ active: section.isActive }"
+                @click="updateCurrentSection(index)">
                 {{ section.title }}
               </li>
             </ul>
@@ -79,7 +80,7 @@ li {
   border-bottom-right-radius: 5px;
 }
 
-ul > li:hover {
+ul>li:hover {
   /* color: #d3f7f3; */
   background-color: #778787;
   transition: background-color 1.5s ease;
@@ -121,4 +122,14 @@ ul > li:hover {
   background-color: #000000;
 }
 
+@media (max-width: 992px) {
+  .container-experience {
+    margin: 0 50px 0 50px;
+  }
+}
+@media (max-width: 757px) {
+  .container-experience {
+    margin: 0px;
+  }
+}
 </style>
